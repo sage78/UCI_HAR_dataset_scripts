@@ -41,7 +41,7 @@ source('run_analysis2.R')
 For general description, see UCI HAR Dataset/README.txt
 ```
 Variables are described below in the following format:
-variable          name of variable(s)/column(s).
+variable          name of variable(s)/column(s)
     type          variable type
     range         variable range
     description   short description about the variable
