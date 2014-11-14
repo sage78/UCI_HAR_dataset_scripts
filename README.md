@@ -39,7 +39,7 @@ source('run_analysis2.R')
 
 ## Code book
 For general description, see UCI HAR Dataset/README.txt
-
+```
 Variables are described below in the following format:
 variable          name of variable (column). Multiple rows if type, range and description are equal for multiple variables
     type          variable type
@@ -129,3 +129,4 @@ fBodyBodyGyroJerkMag-std
     numeric
     not limited
     Additional vectors obtained by averaging the signals in a signal window sample
+```
