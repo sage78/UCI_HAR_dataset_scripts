@@ -22,11 +22,11 @@ This script reads data from
 - UCI HAR Dataset/train/y_train.txt
 
 The following manipulations are applied
-- Column are named as subject, activity and the rest according to UCI HAR Dataset/features.txt, except that parenthesis are removed from column names
+- Columns are named as subject, activity and the rest according to UCI HAR Dataset/features.txt, except that parenthesis are removed from column names
 - Activities are named according to UCI HAR Dataset/activity_labels.txt
 - Only columns related to mean (mean) and standard deviation (std) are included in the result
 - Data is grouped by activity and subject
-- Column averages are calcuated for each group
+- Column averages are calculated for each group
 
 ## Outputs
 A tidy data set with the average of each mean and standard deviation variable for each activity and each subject is created in the working directory and named as tidydataset.txt
@@ -34,7 +34,7 @@ A tidy data set with the average of each mean and standard deviation variable fo
 ## Usage
 In R console, type the following command
 ```
-source('run_analysis2.R')
+source('run_analysis.R')
 ```
 
 ## Code book
