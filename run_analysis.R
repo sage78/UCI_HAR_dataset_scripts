@@ -43,7 +43,7 @@ data[,"activity"] <- activities$activity[data$activityid]
 # group by activity and subject
 # calculate column means for the groups 
 tidydata <- tbl_df(data)
-tidydata <- select(tidydata, matches("subject|.mean\\-|.mean\\b|.std\\-.|.std\\b|activity\\b", ignore.case = FALSE))
+tidydata <- select(tidydata, matches("subject\\b|.mean\\-.|.mean\\b|.std\\-.|.std\\b|activity\\b", ignore.case = FALSE))
 tidydata <- group_by(tidydata, activity, subject)
 tidydata <- summarise_each(tidydata, funs(mean))
 
