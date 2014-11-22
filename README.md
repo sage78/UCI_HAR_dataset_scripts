@@ -22,7 +22,7 @@ This script reads data from
 - UCI HAR Dataset/train/y_train.txt
 
 The following manipulations are applied
-- Columns are named as subject, activity and the rest according to UCI HAR Dataset/features.txt, except that parenthesis are removed from column names
+- Columns are named as subject, activity and the rest according to UCI HAR Dataset/features.txt, except that parenthesis are removed and only lower case letters are used
 - Activities are named according to UCI HAR Dataset/activity_labels.txt
 - Only columns related to mean (mean) and standard deviation (std) are included in the result
 - Data is grouped by activity and subject
@@ -56,76 +56,76 @@ subject
     1:30
     Identifier of a volunteer
     
-tBodyAcc-mean-X
-tBodyAcc-mean-Y          
-tBodyAcc-mean-Z
-tBodyAcc-std-X
-tBodyAcc-std-Y
-tBodyAcc-std-Z
-tGravityAcc-mean-X
-tGravityAcc-mean-Y
-tGravityAcc-mean-Z
-tGravityAcc-std-X
-tGravityAcc-std-Y
-tGravityAcc-std-Z
-tBodyAccJerk-mean-X
-tBodyAccJerk-mean-Y
-tBodyAccJerk-mean-Z
-tBodyAccJerk-std-X
-tBodyAccJerk-std-Y
-tBodyAccJerk-std-Z
-tBodyGyro-mean-X
-tBodyGyro-mean-Y
-tBodyGyro-mean-Z
-tBodyGyro-std-X
-tBodyGyro-std-Y
-tBodyGyro-std-Z
-tBodyGyroJerk-mean-X
-tBodyGyroJerk-mean-Y
-tBodyGyroJerk-mean-Z
-tBodyGyroJerk-std-X
-tBodyGyroJerk-std-Y
-tBodyGyroJerk-std-Z
-fBodyAcc-mean-X
-fBodyAcc-mean-Y
-fBodyAcc-mean-Z
-fBodyAcc-std-X
-fBodyAcc-std-Y
-fBodyAcc-std-Z
-fBodyAccJerk-mean-X
-fBodyAccJerk-mean-Y
-fBodyAccJerk-mean-Z
-fBodyAccJerk-std-X
-fBodyAccJerk-std-Y
-fBodyAccJerk-std-Z
-fBodyGyro-mean-X
-fBodyGyro-mean-Y
-fBodyGyro-mean-Z
-fBodyGyro-std-X
-fBodyGyro-std-Y
-fBodyGyro-std-Z
+tbodyacc-mean-x
+tbodyacc-mean-y          
+tbodyacc-mean-z
+tbodyacc-std-x
+tbodyacc-std-y
+tbodyacc-std-z
+tgravityacc-mean-x
+tgravityacc-mean-y
+tgravityacc-mean-z
+tgravityacc-std-x
+tgravityacc-std-y
+tgravityacc-std-z
+tbodyaccjerk-mean-x
+tbodyaccjerk-mean-y
+tbodyaccjerk-mean-z
+tbodyaccjerk-std-x
+tbodyaccjerk-std-y
+tbodyaccjerk-std-z
+tbodygyro-mean-x
+tbodygyro-mean-y
+tbodygyro-mean-z
+tbodygyro-std-x
+tbodygyro-std-y
+tbodygyro-std-z
+tbodygyrojerk-mean-x
+tbodygyrojerk-mean-y
+tbodygyrojerk-mean-z
+tbodygyrojerk-std-x
+tbodygyrojerk-std-y
+tbodygyrojerk-std-z
+fbodyacc-mean-x
+fbodyacc-mean-y
+fbodyacc-mean-z
+fbodyacc-std-x
+fbodyacc-std-y
+fbodyacc-std-z
+fbodyaccjerk-mean-x
+fbodyaccjerk-mean-y
+fbodyaccjerk-mean-z
+fbodyaccjerk-std-x
+fbodyaccjerk-std-y
+fbodyaccjerk-std-z
+fbodygyro-mean-x
+fbodygyro-mean-y
+fbodygyro-mean-z
+fbodygyro-std-x
+fbodygyro-std-y
+fbodygyro-std-z
     numeric
     not limited
     Signals used to estimate variables of the feature vector for each pattern. X, Y and Z is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAccMag-mean
-tBodyAccMag-std
-tGravityAccMag-mean
-tGravityAccMag-std
-tBodyAccJerkMag-mean
-tBodyAccJerkMag-std
-tBodyGyroMag-mean
-tBodyGyroMag-std
-tBodyGyroJerkMag-mean
-tBodyGyroJerkMag-std
-fBodyAccMag-mean
-fBodyAccMag-std
-fBodyBodyAccJerkMag-mean
-fBodyBodyAccJerkMag-std
-fBodyBodyGyroMag-mean
-fBodyBodyGyroMag-std
-fBodyBodyGyroJerkMag-mean
-fBodyBodyGyroJerkMag-std
+tbodyaccmag-mean
+tbodyaccmag-std
+tgravityaccmag-mean
+tgravityaccmag-std
+tbodyaccjerkmag-mean
+tbodyaccjerkmag-std
+tbodygyromag-mean
+tbodygyromag-std
+tbodygyrojerkmag-mean
+tbodygyrojerkmag-std
+fbodyaccmag-mean
+fbodyaccmag-std
+fbodybodyaccjerkmag-mean
+fbodybodyaccjerkmag-std
+fbodybodygyromag-mean
+fbodybodygyromag-std
+fbodybodygyrojerkmag-mean
+fbodybodygyrojerkmag-std
     numeric
     not limited
     Additional vectors obtained by averaging the signals in a signal window sample

@@ -27,9 +27,11 @@ data <- rbind(testdata, traindata)
   
 # set column names: subject, activityid and the rest according to UCI HAR Dataset/features.txt
 # remove parenthesis from columns names
+# use only lower case letters in column names
 # make column names unique, as features have some duplicate names
 features <- read.table("UCI HAR Dataset/features.txt", colClasses="character")
 featurenames <- sapply(features[,2], str_replace_all, "[\\(\\)]", "")
+featurenames <- sapply(featurenames, tolower)
 colnames(data) <- make.unique(c("subject", featurenames, "activityid"))
   
 # convert numeric activity ids to textual activity names
@@ -43,7 +45,7 @@ data[,"activity"] <- activities$activity[data$activityid]
 # group by activity and subject
 # calculate column means for the groups 
 tidydata <- tbl_df(data)
-tidydata <- select(tidydata, matches("subject\\b|.mean\\-.|.mean\\b|.std\\-.|.std\\b|activity\\b", ignore.case = FALSE))
+tidydata <- select(tidydata, matches("^subject$|\\-mean\\-|\\-mean$|\\-std\\-|\\-std$|^activity$"))
 tidydata <- group_by(tidydata, activity, subject)
 tidydata <- summarise_each(tidydata, funs(mean))
 
